@@ -277,7 +277,7 @@ def main():
     else:
         # Full output already printed above
         print("Test completed!")
-    
+        print("Powered by https://internetspeedtest.net")
     return 0
 
 
