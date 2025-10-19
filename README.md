@@ -31,6 +31,8 @@ This Python CLI tool brings the power of InternetSpeedTest.net to your terminal 
 - 🐍 Pure Python implementation with threading optimization
 - 🎨 Beautiful progress indicators and clean output
 
+[![asciicast](https://asciinema.org/a/749978.svg)](https://asciinema.org/a/749978)
+
 ## Installation
 
 > 💡 **Quick Start:** Want to test your speed right now? Visit **[internetspeedtest.net](https://internetspeedtest.net)** for an instant browser-based test!
